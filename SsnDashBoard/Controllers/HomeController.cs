@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Twilio.Mvc;
+
 
 namespace SsnDashBoard.Controllers
 {
@@ -10,20 +12,18 @@ namespace SsnDashBoard.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+                return View();
         }
 
-        public ActionResult About()
+        private ActionResult AdminView()
         {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.Message = "Supervisor Safety Net: supporting GP Registrars in practice";
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
+            ViewBag.Message = "Support for Supervisor Safety Net can be found at:";
             return View();
         }
     }

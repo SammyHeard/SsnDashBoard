@@ -30,4 +30,5 @@ namespace SsnDashBoard.Models
             return new ApplicationDbContext();
         }
     }
+
 }
